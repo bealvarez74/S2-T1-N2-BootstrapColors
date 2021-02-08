@@ -1,0 +1,59 @@
+* {padding:0px;
+   margin:0px;}
+
+.container{
+	max-width: 1200px;
+}
+
+/*medidas del slider*/
+.carousel-item {max-height: 600px;}
+.carousel-item img {width: 100%;}
+
+/*Sección divs de colores bajo slider*/
+/*row superpuesta en el slider fijando un margen superior negativo*/
+.row.squares{
+	max-width:1000px;
+	margin-top:-100px;
+	margin-right:auto;
+	margin-left:auto;
+}
+/*definición de imagenes de fondo efecto parallax para los diferentes divs de color*/
+.square1, .square2, .square3 {
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.square1{background-image: url(../images/florencia-viadana-1J8k0qqUfYY-unsplash.jpg);}
+.square2{background-image: url(../images/syd-wachs-slItfWbhijc-unsplash.jpg);}
+.square3{background-image: url(../images/cesar-viteri-693RRbiTAaI-unsplash.jpg);}
+
+/*fondo de div de color transparente*/
+
+.square-color{
+	opacity:0.85;
+}
+/*contenido flex de los divs colores*/
+.contentsquare{
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items:center;
+	min-height:180px;	
+ }
+
+/*Sección iconos lectores, fondo imagen efecto parallax*/
+.itemsreaders {
+	background-image:url(../images/ella-deane-apvVKsYs-Yo-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Sección  venta de libro estilos*/
+.precio {font-size: 2.5rem;}
+.oferta {
+	font-weight: 300;
+	font-size: 1.8rem;
+}
+
